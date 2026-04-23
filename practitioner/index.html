@@ -136,7 +136,7 @@
   .aspen-title { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 700; color: var(--white); margin-bottom: 6px; }
   .aspen-meta { font-size: 14px; color: rgba(173,196,224,0.7); margin-bottom: 20px; line-height: 1.5; }
   .bar-groups { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
-  /* .bar-group { } */
+  .bar-group { }
   .bg-label { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 12px; }
   .bg-label.dec { color: #5b9fd4; }
   .bg-label.inc { color: #4caf82; }
@@ -243,11 +243,17 @@
 
   @media (max-width: 600px) {
     .hero h1 { font-size: 30px; }
+    .container { padding: 0 20px; }
+    .section { padding: 48px 0; }
     .paths-grid, .bundle-grid, .usage-grid, .nrf2-grid, .pathway-grid, .bar-groups, .wf-grid { grid-template-columns: 1fr; }
     .kit-grid { grid-template-columns: 1fr 1fr; }
     .qr-grid { grid-template-columns: 1fr; }
     .foundation-label { display: none; }
     .foundation-arrow { margin-left: 0; }
+    /* Subscription packs — 3-col inline grid */
+    .mobile-stack { grid-template-columns: 1fr !important; }
+    /* Income journey — 2-col inline grid */
+    .mobile-stack-2 { grid-template-columns: 1fr !important; }
   }
 </style>
 </head>
@@ -618,7 +624,7 @@
     <p class="body-text" style="margin-bottom: 8px;">These subscription bundles offer the best value on the core Redox products. Patients can also add any individual ASEA product to their subscription — but these packs are the recommended starting point.</p>
     <p class="body-text" style="margin-bottom: 24px; font-size: 15px;">Patients order through your ASEA website at <strong>aseaglobal.com/[your username]</strong> and enter your referral code at checkout for 10% off their first order.</p>
 
-    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-top: 8px;">
+    <div class="mobile-stack" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-top: 8px;">
 
       <div style="background: var(--white); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; position: relative;">
         <div style="position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--gold);"></div>
@@ -692,9 +698,7 @@
       <div class="eyebrow" style="margin-bottom: 6px;">Brand Partner Wholesale Packs</div>
       <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 700; color: var(--navy); margin-bottom: 8px; line-height: 1.25;">Family Pack &amp; Entrepreneur Pack</h3>
       <p class="body-text" style="margin-bottom: 20px; font-size: 15px;">For practitioners building inventory or supporting multiple family members — these wholesale packs offer the deepest per-unit value on core Redox products.</p>
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-
-        <!-- Family Pack -->
+      <div class="mobile-stack" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
         <div style="background: var(--white); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; position: relative;">
           <div style="position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--green);"></div>
           <div style="background: var(--navy); padding: 18px 20px;">
@@ -778,7 +782,7 @@
     <div class="eyebrow">05b · The Income Journey</div>
     <h2 class="section-title">Compounding income — one example of how it builds.</h2>
     <p class="body-text" style="margin-bottom: 24px;">The model is flexible — more patients, fewer Brand Partners, a deeper network, a wider one. Every path looks different. What stays constant is the compounding. The example below assumes two Brand Partners and one patient per cycle with one person duplicating. It is one scenario among many.</p>
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 24px;">
+    <div class="mobile-stack" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 24px;">
       <div style="background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 32px; position: relative; overflow: hidden;">
         <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--green); border-radius: 12px 12px 0 0;"></div>
         <div style="font-size: 10px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #999; margin-bottom: 8px;">Month 12 — Year One</div>
